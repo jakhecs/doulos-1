@@ -1,0 +1,58 @@
+$font-w-book: 350;
+$font-w-regular: 400;
+$font-w-semi-bold: 600;
+$font-w-bold: 700;
+
+
+$font-size-xs: 20px;
+$font-size-sm: 25px;
+$font-size-md: 30px;
+$font-size-lg: 50px;
+$font-size-xl: 80px;
+$font-size-xxl: 100px;
+
+
+$ff-primary: Bebas-neue;
+$ff-secondary: Manrope;
+
+
+$font-size-body: $font-size-md;
+
+
+// Heading
+$font-size-title-sm: $font-size-lg;
+$font-size-title-md: $font-size-xl;
+$font-size-title-lg: $font-size-xxl;
+
+
+
+@font-face {
+    font-family: Bebas-neue;
+    src: url(./../../fonts/bebas-neue-pro/Bebas\ Neue\ Pro\ Book.otf);
+    font-weight: 350;
+}
+
+@font-face {
+    font-family: Bebas-neue;
+    src: url(./../../fonts/bebas-neue-pro/Bebas\ Neue\ Pro\ Regular.otf);
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: Manrope;
+    src: url(./../../fonts/Manrope/Manrope-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: Manrope;
+    src: url(./../../fonts/Manrope/Manrope-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Manrope;
+    src: url(./../../fonts/Manrope/Manrope-SemiBold.ttf);
+    font-weight: 600;
+}
+
+
