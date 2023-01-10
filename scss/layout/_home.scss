@@ -1,10 +1,24 @@
 @use './../base/colors';
 @use './../abstract/functions';
+@use './../base/typography' as fonts;
 
 .hero {
-    background-image: linear-gradient(transparent, colors.$color-accent-01), url(./../../images/vague1.png);
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-image: linear-gradient(rgba(colors.$color-accent-01, 0.6), rgba(colors.$color-accent-01, 0.6) ), url(./../../images/vague1.png);
+
+
+    &__text-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
     &__text {
         color: colors.$color-primary-01;
+        font-family: fonts.$ff-secondary;
+        font-weight: fonts.$font-w-bold;
     }
 }
