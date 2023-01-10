@@ -1,0 +1,14 @@
+@use './base/colors' as *;
+@use './base/helper' as *;
+@use './base/spacing' as *;
+@use './base/typography' as *;
+
+@use './layouts/about' as *;
+@use './layouts/candidate' as *;
+@use './layouts/contact' as *;
+@use './layouts/employer' as *;
+@use './layouts/footer' as *;
+@use './layouts/home' as *;
+@use './layouts/navbar' as *;
+
+@use './components/buttom' as *;
