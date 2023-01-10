@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>DOULOS</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./scss/style.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="header container mt">
+        <nav class="flex flex-jc-sb flex-ai-c ">
             <a href="#hero"><img src="./images/logo.png" class="header__logo"></a>
-            <ul>
-                <li><a href="#a_propos">À propos</a></li>
-                <li><a href="#Employeurs">Employeurs</a></li>
-                <li><a href="#Candidats">Candidats</a></li>
-                <li><a href="#Contact">Contact</a></li>
+            <ul class="flex flex-ai-c">
+                <li class="ml"><a href="#a_propos">À propos</a></li>
+                <li class="ml"><a href="#Employeurs">Employeurs</a></li>
+                <li class="ml"><a href="#Candidats">Candidats</a></li>
+                <li class="ml"><a href="#Contact">Contact</a></li>
             </ul>
-            <button class="btn">Réserver une consultation</button>
-            <button class="btn">English</button>
+            <button class="btn btn--one">Réserver une consultation</button>
+            <button class="btn btn--two">English</button>
         </nav>
+        <hr class="mt">
     </header>
 </body>
 </html>

@@ -1,0 +1,23 @@
+@use './../base/colors';
+@use './../abstract/functions';
+
+.btn{
+    border: none;
+    padding: functions.pixelToRem(6) functions.pixelToRem(18);
+
+    &--one{
+        background-color: colors.$color-accent-01;
+        border: 1px solid colors.$color-accent-01;
+        text-transform: uppercase;
+        color: colors.$color-primary-01;
+
+    }
+    &--two{
+        background-color:colors.$color-primary-01;
+        border: 1px solid colors.$color-secondary-01;
+        color: colors.$color-secondary-01;
+        text-transform: uppercase;
+    }
+}
+
+

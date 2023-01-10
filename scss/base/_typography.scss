@@ -1,19 +1,21 @@
+@use './../abstract/functions';
+
 $font-w-book: 350;
 $font-w-regular: 400;
 $font-w-semi-bold: 600;
 $font-w-bold: 700;
 
 
-$font-size-xs: 20px;
-$font-size-sm: 25px;
-$font-size-md: 30px;
-$font-size-lg: 50px;
-$font-size-xl: 80px;
-$font-size-xxl: 100px;
+$font-size-xs: functions.pixelToRem(20);
+$font-size-sm: functions.pixelToRem(25);
+$font-size-md: functions.pixelToRem(30);
+$font-size-lg: functions.pixelToRem(50);
+$font-size-xl: functions.pixelToRem(80);
+$font-size-xxl: functions.pixelToRem(100);
 
 
 $ff-primary: Bebas-neue;
-$ff-secondary: ;
+$ff-secondary: Manrope;
 
 
 $font-size-body: $font-size-md;

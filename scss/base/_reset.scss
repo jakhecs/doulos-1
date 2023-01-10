@@ -1,0 +1,27 @@
+@use './typography' as fonts;
+@use './../base/colors';
+@use './../abstract/functions';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fonts.$ff-primary;
+    font-weight: fonts.$font-w-book;
+    color: colors.$color-accent-01;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+hr {
+    border: 0;
+    height: functions.pixelToRem(1);
+    background-color:  colors.$color-secondary-01;
+}
