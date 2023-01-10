@@ -5,14 +5,27 @@
     border: none;
     padding: functions.pixelToRem(6) functions.pixelToRem(18);
 
-    &--one{
+    &--normal {
+        background-color: colors.$color-accent-01;
+        border: 1px solid colors.$color-accent-01;
+        color: colors.$color-primary-01;
+    }
+
+    &--normal-light {
+        background-color: colors.$color-primary-01;
+        border: 1px solid colors.$color-primary-01;
+        color: colors.$color-accent-01;
+    }
+
+    &--uppercase {
         background-color: colors.$color-accent-01;
         border: 1px solid colors.$color-accent-01;
         text-transform: uppercase;
         color: colors.$color-primary-01;
 
     }
-    &--two{
+
+    &--two {
         background-color:colors.$color-primary-01;
         border: 1px solid colors.$color-secondary-01;
         color: colors.$color-secondary-01;

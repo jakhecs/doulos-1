@@ -1,0 +1,10 @@
+@use './../base/colors';
+@use './../abstract/functions';
+
+.hero {
+    background-image: linear-gradient(transparent, colors.$color-accent-01), url(./../../images/vague1.png);
+
+    &__text {
+        color: colors.$color-primary-01;
+    }
+}
