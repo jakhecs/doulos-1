@@ -18,9 +18,9 @@
 
     &__description {
         width: 80%;
-        position: absolute; 
-        bottom: -4%;
-        left: 10%;
+        margin-top: 225;
+        margin-left: 195;
+        margin: functions.pixelToRem(255) 0 0 functions.pixelToRem(195);
         box-shadow: 0 0 functions.pixelToRem(24) rgba($color: colors.$color-third-01, $alpha: 0.15);
         font-family: fonts.$ff-secondary;
         font-size: fonts.$font-size-md;
