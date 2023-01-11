@@ -1,9 +1,30 @@
 @use './../abstract/functions';
 
-.mt {
-    margin-top: functions.pixelToRem(30);
-}
+$sides: (
+    "t": "top",
+    "b": "bottom",
+    "l": "left",
+    "r": "right"
+);
 
-.ml {
-    margin-left: functions.pixelToRem(80); 
+$margin-spaces: (
+    "10": functions.pixelToRem(10), 
+    "20": functions.pixelToRem(20), 
+    "35": functions.pixelToRem(35), 
+    "40": functions.pixelToRem(40), 
+    "45": functions.pixelToRem(45), 
+    "72": functions.pixelToRem(72), 
+    "80": functions.pixelToRem(80), 
+    "100": functions.pixelToRem(100), 
+    "115": functions.pixelToRem(115),
+    "288": functions.pixelToRem(288)
+);
+
+
+@each $space, $spaceRem in $margin-spaces {
+    @each $sideKey, $sideValue in $sides {
+        .m#{$sideKey}-#{$space} {
+            margin-#{$sideValue}: $spaceRem;
+        }
+    }
 }
