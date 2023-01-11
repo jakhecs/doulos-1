@@ -8,11 +8,13 @@ $sides: (
 );
 
 $margin-spaces: (
+    "10": functions.pixelToRem(10), 
     "20": functions.pixelToRem(20), 
     "35": functions.pixelToRem(35), 
     "40": functions.pixelToRem(40), 
     "45": functions.pixelToRem(45), 
     "72": functions.pixelToRem(72), 
+    "80": functions.pixelToRem(80), 
     "100": functions.pixelToRem(100), 
     "115": functions.pixelToRem(115)
 );

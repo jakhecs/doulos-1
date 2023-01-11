@@ -13,12 +13,19 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-40%, -50%);
+        font-size: fonts.$font-size-title-sm;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     &__text {
         color: colors.$color-primary-01;
         font-family: fonts.$ff-secondary;
         font-weight: fonts.$font-w-bold;
+    }
+
+    & button{
+        font-size: fonts.$font-size-title-sm
     }
 }
