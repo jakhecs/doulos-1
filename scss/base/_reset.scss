@@ -2,6 +2,9 @@
 @use './../base/colors';
 @use './../abstract/functions';
 
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     margin: 0;
@@ -13,6 +16,7 @@ body{
     font-family: fonts.$ff-primary;
     font-weight: fonts.$font-w-book;
     color: colors.$color-accent-01;
+    overflow-x: hidden;
 }
 
 a {

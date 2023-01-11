@@ -1,0 +1,17 @@
+@use './../base/colors';
+@use './../base/typography'  as fonts;
+@use './../abstract/functions';
+
+.footer {
+    font-family: fonts.$ff-secondary;
+    background-color: colors.$color-third-01;
+    padding-top: functions.pixelToRem(75);
+    padding-bottom: functions.pixelToRem(75);
+    color: colors.$color-primary-01;
+
+    &__contact {
+        border-left: functions.pixelToRem(1) solid colors.$color-secondary-01;
+        padding-left: functions.pixelToRem(100);
+
+    }
+}
