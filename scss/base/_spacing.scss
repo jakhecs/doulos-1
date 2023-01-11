@@ -1,9 +1,8 @@
 @use './../abstract/functions';
-
 .mt {
     margin-top: functions.pixelToRem(30);
 }
 
 .ml {
-    margin-left: functions.pixelToRem(80); 
+    margin-left: functions.pixelToRem(80);
 }

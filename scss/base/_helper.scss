@@ -1,19 +1,22 @@
 @use './typography' as fonts;
 @use './colors';
 @use './../abstract/functions';
-
-
-
 .flex {
     display: flex;
-    &-ai-c{
+    &-ai-c {
         align-items: center;
     }
-    &-jc-sb{
+    &-jc-sb {
         justify-content: space-between;
     }
-    &-jc-c{
+    &-jc-c {
         justify-content: center;
+    }
+    &-jc-fs {
+        justify-content: flex-start;
+    }
+    &-ai-s {
+        align-items: start;
     }
 }
 
