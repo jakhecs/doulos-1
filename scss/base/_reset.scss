@@ -7,6 +7,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
     font-family: fonts.$ff-primary;
     font-weight: fonts.$font-w-book;
     color: colors.$color-accent-01;
@@ -14,6 +17,8 @@
 
 a {
     text-decoration: none;
+    color: colors.$color-accent-01;
+
 }
 
 li {
