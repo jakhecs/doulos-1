@@ -11,21 +11,21 @@
 </head>
 
 <body>
-    <header class="header container mt">
+    <header class="header container">
         <nav class="flex flex-jc-sb flex-ai-c ">
-            <a href="#hero"><img src="./images/logo.png" class="header__logo"></a>
+            <a href="#"><img src="./images/logo.svg" class="header__logo" alt="Logo"></a>
             <ul class="flex flex-ai-c">
-                <li class="ml"><a href="#a_propos">À propos</a></li>
-                <li class="ml"><a href="#Employeurs">Employeurs</a></li>
-                <li class="ml"><a href="#Candidats">Candidats</a></li>
-                <li class="ml"><a href="#Contact">Contact</a></li>
+                <li class="ml-80"><a href="#a_propos">À propos</a></li>
+                <li class="ml-80"><a href="#cmployeurs">Employeurs</a></li>
+                <li class="ml-80"><a href="#candidate">Candidats</a></li>
+                <li class="ml-80"><a href="#contact">Contact</a></li>
             </ul>
             <div>
-                <button class="btn btn--uppercase">Réserver une consultation</button>
-                <button class="btn btn--two ml">English</button>
+                <button class="btn btn--primary btn--uppercase">Réserver une consultation</button>
+                <button class="btn btn--secondary btn--uppercase ml-100">English</button>
             </div>
         </nav>
-        <hr class="mt">
+        <hr class="mt-20">
     </header>
 
     <section id="hero" class="hero">
@@ -97,6 +97,113 @@
         </div>
 
     </section>
+    <section class="hero slide-1 mt-100 flex flex-jc-c flex-ai-c">
+        <div class="hero__text-btn">
+            <p class="hero__text"> Contrer la pénurie de main-d’œuvre par le recrutement international de travailleurs francophones.</p>
+            <button class="btn btn--large mt-45">Réserver une consultation</button>
+            <a href="#a_propos" class="mt-80"><img src="./images/arrow-down.svg" alt="Icone fleche"></a>
+        </div>
+    </section>
+
+    <section class="hero slide-2 mt-100 flex flex-jc-c flex-ai-c">
+        <div class="hero__text-btn">
+            <p class="hero__text">
+                Une mine d’opportunités
+                <br> pour les travailleurs étrangers.
+            </p>
+            <button class="btn btn--large mt-45">Réserver une consultation</button>
+            <a href="#a_propos" class="mt-80"><img src="./images/arrow-down.svg" alt="Icone fleche"></a>
+        </div>
+    </section>
+
+    <section id="candidate" class="candidate mt-100">
+        <h2>Candidats</h2>
+
+        <p class="candidate__description">
+            Immigrer et travailler au Canada, c’est votre rêve : vous êtes à la bonne place. Notre équipe de professionnels vous accompagnera dans tout le processus.
+            <br> <br> Différents services offerts :
+        </p>
+        <div class="candidate__services">
+            <div class="service ml-288 mr-288">
+                <p>Orientation professionnelle</p>
+            </div>
+            <div class="service ml-288 mr-288">
+                <p>Préparation à la recherche d’emploi (Mise à jour du CV et rédaction d’un lettre de motivation)</p>
+            </div>
+            <div class="service ml-288 mr-288">
+                <p>Préparation aux entrevues d’embauches</p>
+            </div>
+            <div class="service ml-288 mr-288">
+                <p>Intermédiation avec des employeurs</p>
+            </div>
+            <div class="service ml-288 mr-288">
+                <p>Établissement et dépôt de la demande de CAQ</p>
+            </div>
+            <div class="service ml-288 mr-288">
+                <p>Établissement et dépôt de la demande de permis de travail et de visa de résidence temporaire</p>
+            </div>
+            <div class="service ml-288 mr-288">
+                <p>Aide à la recherche de logement</p>
+            </div>
+            <div class="service ml-288 mr-288">
+                <p>Accueil à l’arrivée</p>
+            </div>
+            <div class="service ml-288 mr-288">
+                <p>Fiscalisation au Québec, cooptation du permis de conduire et ouverture d’un compte bancaire</p>
+            </div>
+            <div class="service ml-288 mr-288">
+                <p>Francisation</p>
+            </div>
+            <div class="service ml-288 mr-288">
+                <p>Intégration sociale et professionnelle</p>
+            </div>
+            <div class="service ml-288 mr-288">
+                <p>Demande de VRT et de permis de travail ouvert pour conjointe/conjoint</p>
+            </div>
+            <div class="service ml-288 mr-288">
+                <p>CAQ et permis d’étude pour les enfants</p>
+            </div>
+            <div class="flex flex-jc-c flex-ai-c mt-72">
+                <button class="btn btn--primary-large">Réserver une consultation</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact flex mt-100">
+        <div class="contact__text flex flex-ai-c flex-jc-c">
+            <div>
+                <h2>Agence agréée</h2>
+                <p class="mt-20">
+                    Doulos Inc. Est une agence de placement de travailleurs étrangers temporaires reconnue par le CNESST # AR-2202650
+                </p>
+            </div>
+        </div>
+        <div class="contact__image"><img src="./images/agence-agree.png" alt="Photo"></div>
+    </section>
+
+    <section class="partener flex flex-ai-c flex-jc-c mt-100">
+        <div>LOGO partener 1</div>
+        <div>LOGO partener 2</div>
+    </section>
+
+    <footer class="footer container flex flex-ai-c  mt-100">
+        <div>
+            <img src="./images/logo-light.svg" class="footer__logo mr-100" alt="Logo">
+        </div>
+        <div class="footer__contact mr-100">
+            <h3>Contact</h3>
+            <p>
+                Email: info@immigration.ca <br> Tél: +15146684962
+            </p>
+        </div>
+
+        <div class="footer__position mr-100">
+            <h3>Siège social</h3>
+            <p>
+                Adresse: 4313 rue la légion, Saint-Hubert,<br> Québec, J3Y1Z2, Canada
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>

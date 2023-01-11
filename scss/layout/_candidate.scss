@@ -1,0 +1,43 @@
+@use './../base/colors';
+@use './../base/typography'  as fonts;
+@use './../abstract/functions';
+
+.candidate {
+    background-image: url(./../../images/candidat.png);
+    background-image: cover;
+    background-repeat: no-repeat;
+
+    h2 {
+        color: colors.$color-primary-01;
+        font-size: fonts.$font-size-title-lg;
+        font-weight: fonts.$font-w-regular;
+        padding: functions.pixelToRem(115) 0 0 functions.pixelToRem(192);
+    }
+
+    &__description {
+        width: 80%;
+        margin-top: 225;
+        margin-left: 195;
+        font-family: fonts.$ff-secondary;
+        font-size: fonts.$font-size-md;
+        margin: functions.pixelToRem(255) 0 0 functions.pixelToRem(195);
+        box-shadow: 0 0 functions.pixelToRem(24) rgba($color: colors.$color-third-01, $alpha: 0.15);
+        background-color: colors.$color-primary-01;
+        padding: functions.pixelToRem(40);   
+    }
+
+    &__services {
+        font-size: fonts.$font-size-md;
+        font-family: fonts.$ff-secondary;
+        .service {
+            border: functions.pixelToRem(1) solid colors.$color-third-light-01;
+            margin-top: functions.pixelToRem(20);
+            padding: functions.pixelToRem(20);
+        }
+    }
+
+    button {
+        text-align: center;
+        font-size: fonts.$font-size-title-sm;
+    }
+}

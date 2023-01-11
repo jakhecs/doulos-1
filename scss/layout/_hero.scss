@@ -1,0 +1,38 @@
+@use './../base/colors';
+@use './../abstract/functions';
+@use './../base/typography' as fonts;
+
+.hero {
+    height: 100vh;
+    background-size: cover;
+
+    &__text-btn {
+        width: functions.pixelToRem(861);
+        font-size: fonts.$font-size-title-sm;
+        flex-direction: column;
+        align-items: flex-start;
+
+        a {
+            display: block;
+        }
+    }
+
+    &__text {
+        font-size: fonts.$font-size-title-sm;
+        color: colors.$color-primary-01;
+        font-family: fonts.$ff-secondary;
+        font-weight: fonts.$font-w-bold;
+    }
+
+    & button {
+        font-size: fonts.$font-size-title-sm
+    }
+}
+
+.slide-1 {
+    background-image: linear-gradient(rgba(colors.$color-accent-01, 0.7), rgba(colors.$color-accent-01, 0.7) ), url(./../../images/vague1.png);
+}
+
+.slide-2 {
+    background-image: linear-gradient(rgba(colors.$color-accent-01, 0.7), rgba(colors.$color-accent-01, 0.7) ), url(./../../images/vague2.png);
+}
