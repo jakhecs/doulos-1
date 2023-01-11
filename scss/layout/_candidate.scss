@@ -1,0 +1,30 @@
+@use './../base/colors';
+@use './../base/typography'  as fonts;
+@use './../abstract/functions';
+
+.candidate {
+    background-image: url(./../../images/candidat.png);
+    background-image: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+
+    h2 {
+        color: colors.$color-primary-01;
+        font-size: fonts.$font-size-title-lg;
+        font-weight: fonts.$font-w-regular;
+        padding: functions.pixelToRem(115) 0 0 functions.pixelToRem(192);
+    }
+
+    &__description {
+        width: 80%;
+        position: absolute; 
+        bottom: -4%;
+        left: 10%;
+        box-shadow: 0 0 functions.pixelToRem(24) rgba($color: colors.$color-third-01, $alpha: 0.15);
+        font-family: fonts.$ff-secondary;
+        font-size: fonts.$font-size-md;
+        background-color: colors.$color-primary-01;
+        padding: functions.pixelToRem(40);   
+    }
+}

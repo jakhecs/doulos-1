@@ -1,40 +1,27 @@
 @use './../base/colors';
 @use './../abstract/functions';
 
-.btn{
+.btn {
     border: none;
-    
 
-    &--normal {
+    &--primary {
         padding: functions.pixelToRem(6) functions.pixelToRem(18);
         background-color: colors.$color-accent-01;
         border: 1px solid colors.$color-accent-01;
-        color: colors.$color-primary-01;
+        color: colors.$color-primary-01;  
     }
 
-    &--normal-light {
+    &--secondary {
         padding: functions.pixelToRem(6) functions.pixelToRem(18);
         background-color: colors.$color-primary-01;
-        border: 1px solid colors.$color-primary-01;
-        color: colors.$color-accent-01;
+        border: 1px solid colors.$color-secondary-01;
+        color: colors.$color-secondary-01;
     }
 
     &--uppercase {
-        padding: functions.pixelToRem(6) functions.pixelToRem(18);
-        background-color: colors.$color-accent-01;
-        border: 1px solid colors.$color-accent-01;
         text-transform: uppercase;
-        color: colors.$color-primary-01;
     }
 
-    &--two {
-        padding: functions.pixelToRem(6) functions.pixelToRem(18);
-        background-color:colors.$color-primary-01;
-        border: 1px solid colors.$color-secondary-01;
-        color: colors.$color-secondary-01;
-        text-transform: uppercase;
-    }
-    
     &--large {
         padding: functions.pixelToRem(20) functions.pixelToRem(32);
         background-color: colors.$color-primary-01;
