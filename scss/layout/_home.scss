@@ -3,11 +3,10 @@
 @use './../base/typography' as fonts;
 
 .hero {
-    position: relative;
     height: 100vh;
+    position: relative;
     background-size: cover;
-    background-image: linear-gradient(rgba(colors.$color-accent-01, 0.6), rgba(colors.$color-accent-01, 0.6) ), url(./../../images/vague1.png);
-
+   
 
     &__text-btn {
         position: absolute;
@@ -25,7 +24,15 @@
         font-weight: fonts.$font-w-bold;
     }
 
-    & button{
+    & button {
         font-size: fonts.$font-size-title-sm
     }
+}
+
+.slide-1 {
+    background-image: linear-gradient(rgba(colors.$color-accent-01, 0.7), rgba(colors.$color-accent-01, 0.7) ), url(./../../images/vague1.png);
+}
+
+.slide-2 {
+    background-image: linear-gradient(rgba(colors.$color-accent-01, 0.7), rgba(colors.$color-accent-01, 0.7) ), url(./../../images/vague2.png);
 }
