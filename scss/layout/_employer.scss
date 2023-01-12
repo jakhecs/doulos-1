@@ -1,0 +1,27 @@
+    @use './../base/colors';
+    @use './../base/typography' as fonts;
+    @use './../abstract/functions';
+    .employeur {
+        // min-height: 100vh;
+        min-width: 100vw;
+        background-image: url(./../../images/employeur.png);
+        background-repeat: no-repeat;
+        background-position: fixed;
+        &__info {}
+        &__title {
+            color: colors.$color-primary-01;
+            font-size: fonts.$font-size-title-lg;
+            font-weight: fonts.$font-w-regular;
+            padding: functions.pixelToRem(115) 0 0 0;
+        }
+        .card {
+            background: #fff;
+            width: 400px;
+            &__title {
+                color: colors.$color-accent-01;
+                font-size: fonts.$font-size-xl;
+                font-family: fonts.$ff-primary;
+                font-weight: fonts.$font-w-bold;
+            }
+        }
+    }

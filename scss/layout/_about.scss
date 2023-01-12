@@ -1,0 +1,42 @@
+@use './../base/colors';
+@use './../base/typography' as fonts;
+@use './../abstract/functions';
+.about {
+    min-height: 100vh;
+    // max-width: 80vw;
+    margin: auto;
+    text-align: justify;
+    overflow-x: hidden;
+    &__part {
+        flex-direction: column;
+        &__title {
+            display: flex;
+            width: 100vw;
+            // align-items: center;
+            &::after,
+            &::before {
+                content: "";
+                display: block;
+                height: functions.pixelToRem(1);
+                background-color: colors.$color-secondary-01;
+            }
+            &::before {
+                width: functions.pixelToRem(60);
+            }
+            h3 {
+                display: block;
+                padding: functions.pixelToRem(20);
+                color: colors.$color-secondary-01;
+                font-size: fonts.$font-size-lg;
+                font-weight: fonts.$font-w-regular;
+                font-family: fonts.$ff-primary;
+            }
+        }
+        &__text {
+            color: colors.$color-accent-01;
+            font-family: fonts.$ff-secondary;
+            font-size: fonts.$font-size-sm;
+            font-weight: fonts.$font-w-book;
+        }
+    }
+}
