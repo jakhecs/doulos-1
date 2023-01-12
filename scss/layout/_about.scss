@@ -2,17 +2,17 @@
 @use './../base/typography' as fonts;
 @use './../abstract/functions';
 .about {
-    min-height: 100vh;
-    // max-width: 80vw;
-    margin: auto;
     text-align: justify;
-    overflow-x: hidden;
+    h2 {
+        color: colors.$color-accent-01;
+        font-size: fonts.$font-size-title-lg;
+        font-weight: fonts.$font-w-regular;
+        padding: functions.pixelToRem(115) 0 0 functions.pixelToRem(192);
+    }
     &__part {
         flex-direction: column;
         &__title {
             display: flex;
-            width: 100vw;
-            // align-items: center;
             &::after,
             &::before {
                 content: "";

@@ -2,12 +2,9 @@
     @use './../base/typography' as fonts;
     @use './../abstract/functions';
     .employeur {
-        // min-height: 100vh;
-        min-width: 100vw;
         background-image: url(./../../images/employeur.png);
         background-repeat: no-repeat;
-        background-position: fixed;
-        &__info {}
+
         &__title {
             color: colors.$color-primary-01;
             font-size: fonts.$font-size-title-lg;
@@ -16,11 +13,8 @@
         }
         .card {
             background: #fff;
-            padding: functions.pixelToRem(5) functions.pixelToRem(25);
-            box-shadow: 1px 10px 7px -1px colors.$color-third-light-01;
-            -webkit-box-shadow: 1px 10px 7px -1px colors.$color-third-light-01;
-            -moz-box-shadow: 1px 10px 7px -1px colors.$color-third-light-01;
-            // width: 400px;
+            padding:  functions.pixelToRem(50);
+            box-shadow: 0 0 functions.pixelToRem(24) rgba($color: colors.$color-third-01, $alpha: 0.15);
             &__title {
                 color: colors.$color-secondary-01;
                 font-size: fonts.$font-size-lg;

@@ -23,3 +23,8 @@
 .container {
     padding: 0 functions.pixelToRem(192);
 }
+
+
+.bold {
+    font-weight: fonts.$font-w-bold;
+}
