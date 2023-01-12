@@ -18,13 +18,25 @@
     &-ai-s {
         align-items: start;
     }
+
+    &-col {
+        flex-direction: column;
+    }
+
+    &-row {
+        flex-direction: row;
+    }
+}
+
+.bold {
+    font-weight: fonts.$font-w-bold;
 }
 
 .container {
     padding: 0 functions.pixelToRem(192);
-}
 
-
-.bold {
-    font-weight: fonts.$font-w-bold;
+    @media (max-width: functions.pixelToRem(639)) {
+        margin: 0;
+        padding: 0 functions.pixelToRem(20);
+    }   
 }

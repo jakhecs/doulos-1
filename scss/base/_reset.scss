@@ -15,6 +15,7 @@ html {
 body{
     font-family: fonts.$ff-primary;
     font-weight: fonts.$font-w-book;
+    background-color: colors.$color-primary-01;
     color: colors.$color-accent-01;
     overflow-x: hidden;
 }
@@ -34,4 +35,9 @@ hr {
     height: functions.pixelToRem(1);
     background-color:  colors.$color-secondary-01;
     font-size: fonts.$font-size-body;
+}
+
+
+input, label {
+    display: block;
 }

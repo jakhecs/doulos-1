@@ -10,5 +10,13 @@
     background-color: colors.$color-primary-01;
     width: 100%;
     padding-top: functions.pixelToRem(20);
+    box-shadow: 0 0 functions.pixelToRem(24) rgba($color: colors.$color-third-01, $alpha: 0.15);
 
+
+    &__nav, ul {
+        @media (max-width: functions.pixelToRem(639)) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
 }
