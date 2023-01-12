@@ -1,43 +1,35 @@
-@use './../base/colors'; 
+@use './../base/colors';
 @use './../base/typography' as fonts;
 @use './../abstract/functions';
-
 .btn {
     border: none;
     font-family: fonts.$ff-primary;
-    
-
     &--primary {
         padding: functions.pixelToRem(6) functions.pixelToRem(18);
         background-color: colors.$color-accent-01;
         border: 1px solid colors.$color-accent-01;
-        color: colors.$color-primary-01;  
+        color: colors.$color-primary-01;
     }
-
     &--secondary {
         padding: functions.pixelToRem(6) functions.pixelToRem(18);
         background-color: colors.$color-primary-01;
         border: 1px solid colors.$color-secondary-01;
         color: colors.$color-secondary-01;
     }
-
     &--uppercase {
         text-transform: uppercase;
     }
-
-    &--large{
+    &--large {
         padding: functions.pixelToRem(20) functions.pixelToRem(32);
         background-color: colors.$color-primary-01;
     }
-
     &--primary-large {
         padding: functions.pixelToRem(20) functions.pixelToRem(32);
         background-color: colors.$color-accent-01;
         border: 1px solid colors.$color-accent-01;
         color: colors.$color-primary-01;
     }
-
-
+    &--primary--big {
+        font-size: fonts.$font-size-lg;
+    }
 }
-
-
